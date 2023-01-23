@@ -1,0 +1,45 @@
+<h2>My heroes</h2>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+<!--On enlève cette partie pour mettre les héros dans des liens
+    Pour mettre une classe à un élément [class.nom]="si héros sélectionné alors la classe selectedHero s'affiche
+    <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+      <span class="badge">{{hero.id}}</span>
+      <span class="name">{{hero.name}}</span>
+    </button>
+    -->
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    <button type="button" class="delete" title="delete hero"
+            (click)="delete(hero)">X</button>
+  </li>
+</ul>
+<!--Le parent appelle l'enfant. On supprime cette partie pour avoir juste le détail qui s'affiche et pas toute la liste.
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+-->
+<!--On déplace les particularités des héros dans le nveau fichier hero-detail.html et pour lier les 2 @input et @output
+Et du coup, on lie le parent heroes.component à l'enfant avec "<app-hero-detail [hero]="selectedHero"></app-hero-detail>"
+<div *ngIf="selectedHero">
+  <h2>{{selectedHero.name | uppercase}} Détails</h2>
+Utilisation du pipe pour avoir nom en MAJ. Peut servir aussi pour une date ou autre voir doc
+
+  <div>id: {{selectedHero.id}}</div>
+
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+  </div>
+</div>
+-->
+<!--Ajout d'1 input pour ajouter un héros-->
+<div>
+  <label for="new-hero">Hero name: </label>
+  <input id="new-hero" #heroName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+    Add hero
+  </button>
+</div>

@@ -1,0 +1,10 @@
+<h2>Top Heroes</h2>
+<div class="heroes-menu">
+  <!--On demande au template de créer une grille et de répéter autant de fois (avec *ngFor) ce tableau-->
+  <a *ngFor="let hero of heroes"
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
+
+<app-hero-search></app-hero-search>
