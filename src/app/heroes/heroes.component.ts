@@ -48,7 +48,6 @@ ngOnInit
   /*Méthode pour ajouter un héros :  si le nom n'est pas vide => création d'un objet qui est transmis à addHero méthode du service.
   Qd addHero est validé =>subscribe reçoit le nveau héros et le met dans heroes. */
   add(name: string): void {
-  console.log("coucou");
     name = name.trim();
     if (!name) { return; }
     console.log(name);
