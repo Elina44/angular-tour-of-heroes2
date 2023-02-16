@@ -1,0 +1,8 @@
+<wcs-grid #wcsGrid id="grid-simple-1" selection-config="multiple" [selectedItems]="selectedItems" [data]="tables" (wcsGridSelectionChange)="print($event)">
+  <wcs-grid-column [name]="enteteGrid.label" [path]="enteteGrid.path" sort="" *ngFor="let enteteGrid of enteteGrids"></wcs-grid-column>
+  <!--
+  <wcs-grid-column name="Nom" path="name" sort="" sort-order=""></wcs-grid-column>
+  <wcs-grid-column name="Type" path="type" sort=""></wcs-grid-column>
+  <wcs-grid-column name="job" path="job" sort=""></wcs-grid-column>
+  -->
+</wcs-grid>

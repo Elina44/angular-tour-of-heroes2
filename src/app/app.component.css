@@ -1,6 +1,12 @@
 /* AppComponent's private CSS styles */
+.container-app{
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   margin-bottom: 0;
+  color: #0088ce;
 }
 nav a {
   padding: 1rem;
@@ -19,3 +25,33 @@ nav a:hover {
 nav a:active {
   background-color: black;
 }
+
+
+.container-footer{
+  margin: 0%;
+  padding: 0%;
+  position: fixed;
+  bottom: 0%;
+
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
+}
+/*
+.container{
+  margin: 0%;
+  padding: 0%;
+}
+:host.container{
+  margin: 0%;
+  padding: 0%;
+}
+wcs-footer:host.container{
+  width: auto;
+  margin: 0%;
+}*/

@@ -1,8 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss venant de WCS*/
+@import "~wcs-core/dist/wcs/wcs.css";
+@import "~bootstrap/dist/css/bootstrap-grid.css";
+@import "~bootstrap/dist/css/bootstrap-utilities.css";
+/* styles.scss */
+
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("../src/assets/fonts/avenir-lighter.woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("../src/assets/fonts/avenir-book.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("../src/assets/fonts/avenir-medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("../src/assets/fonts/avenir-black.woff");
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS d'Angular :
+You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
+/*
 h1 {
   color: #369;
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 h2, h3 {
@@ -10,12 +57,14 @@ h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
-body {
+*/
+/*body {
   margin: 2em;
-}
+}*/
+
 body, input[type="text"], button {
   color: #333;
-  font-family: Cambria, Georgia, serif;
+  /*font-family: Cambria, Georgia, serif;*/
 }
 button {
   background-color: #eee;
@@ -39,7 +88,8 @@ button:disabled {
   cursor: auto;
 }
 
-/* everywhere else */
+/* everywhere else
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+*/

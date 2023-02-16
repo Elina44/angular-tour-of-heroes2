@@ -8,6 +8,7 @@ label {
   margin-bottom: .5rem;
 
 }
+
 input {
   padding: .5rem;
   width: 100%;
@@ -45,3 +46,4 @@ ul.search-result {
   margin-top: 0;
   padding-left: 0;
 }
+
