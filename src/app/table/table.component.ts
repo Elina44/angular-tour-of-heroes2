@@ -28,7 +28,7 @@ export class TableComponent implements OnInit {
 
   print(event: any): void {
     /*console.log(this.wcsGrid.selectedItems);*/
-    console.log(event);
+    /*console.log(event);*/
     const index = this.selectedItems.indexOf(event.detail.row.data);
     if(event.detail.row.selected == true) {
     this.selectedItems.push(event.detail.row.data);
@@ -53,8 +53,8 @@ export class TableComponent implements OnInit {
       /*const index = this.selectedItems.indexOf(event.detail.row.data);
       this.selectedItems.splice(index, -1);*/
     }
-    console.log(this.selectedItems);
-    console.log(event);
+    /*console.log(this.selectedItems);
+    console.log(event);*/
   
   }
 }
